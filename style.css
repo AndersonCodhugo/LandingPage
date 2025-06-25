@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    margin: 32px;
+    margin-inline: 192px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.refs {
+    display: flex;
+    flex-direction: row;
+    text-decoration: solid;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
