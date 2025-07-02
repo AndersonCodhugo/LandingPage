@@ -17,6 +17,11 @@
     src: url(assets/fonts/Roboto-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(assets/fonts/Roboto-Thin.ttf);
+}
+
 * {
     font-family: 'Roboto';
     /*color: #f9faf8;*/
@@ -32,6 +37,17 @@ nav {
     justify-content: space-between;
     background-color: #1f2937;
     padding-inline: 288px;
+    font-size: 32px;
+}
+
+nav > .home {
+    font-family: 'Roboto-Bold';
+    font-weight: 900;
+}
+
+nav > .refs {
+    color: #f9faf8;
+    gap: 20px;
 }
 
 a {
@@ -61,6 +77,37 @@ a {
     font-family: 'Roboto-Bold';
 }
 
+.leftPart {
+    margin: auto 0;
+    flex-direction: column;
+    align-items: left;
+}
+
+.leftPart > button {
+    font-family: 'Roboto-Bold';
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding: 10px;
+    padding-inline: 15px;
+    font-size: 16px;
+}
+
+.leftPart > p {
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.leftPart > h1 {
+    margin: 0;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+}
+
 .info {
     display: flex;
     margin-inline: 120px;
@@ -81,21 +128,24 @@ a {
     align-items: center;
     display: flex;
     flex-direction: column;
+    color: #1f2937;
+    font-family: 'Roboto-Thin';
+    font-size: 18px;
 }
 
 .boxes {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 40px;
+    gap: 50px;
 }
 
 .squares {
     display: flex;
-    border: solid 3px;
+    border: solid 4px;
     border-radius: 10px;
     border-color: #3882f6;
-    padding: 50px;
+    padding: 80px;
     flex-direction: column;
 }
 
@@ -105,15 +155,18 @@ button {
     appearance: none;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 button#quoteButton {
     background-color: #3882f6;
     color: #f9faf8;
     appearance: none;
+    font-size: 18px;
     border-radius: 5px;
-    border: solid 1px;
+    border: solid 2px;
     border-color: #f9faf8;
+    cursor: pointer;
 }
 
 .quote {
@@ -121,7 +174,7 @@ button#quoteButton {
     flex-direction: column;
     background-color: #e5e7eb;
     box-sizing: border-box;
-    padding-inline: 288px;
+    padding-inline: 550px;
     padding-block: 90px;
 }
 
@@ -161,7 +214,31 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 100px;
-    padding-inline: 150px;
+    padding-inline: 250px;
+    padding-block: 50px;
     border-radius: 5px;
     background-color: #3882f6;
+}
+
+.callAction > p {
+    margin: auto 0;
+}
+
+#call {
+    font-family: 'Roboto-Bold';
+    font-size: 24px;
+}
+
+#callButton {
+    color: #f9faf8;
+}
+
+#quoteButton {
+    padding: 10px;
+    padding-inline: 20px;
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px;
 }
